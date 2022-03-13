@@ -1,0 +1,1397 @@
+
+@import url('../css/fonts.css');
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*      theme font-family   */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin : 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+}
+
+
+/* ---------------- Global Classes ---------------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+.gradient-bg-welcome {
+  background-color:#0f0e13;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+a > .btn{
+
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+     left: 0;
+    right: 0;
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+.blog-background{
+    margin-top: 50px;
+    margin-bottom: 50px;
+      box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 black;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.prepare > .container3{
+    margin: 0 5vw;
+}
+.container{
+    margin: 0 5vw;
+}
+
+ #redblocks > * {
+     transform: translate3d(160px, -93px, 0);
+     animation: moveblocks 4s 1s ease infinite;
+}
+ @keyframes moveblocks {
+     0% {
+         transform: translate3d(160px, -93px, 0);
+    }
+     50%, 100% {
+         transform: translate(0);
+    }
+}
+ #firstBlock {
+     transform: translate3d(160px, -93px, 0);
+     animation: firstBlock 4s 1s ease infinite;
+}
+ #blockdis {
+     animation: blockdis 4s 1s ease infinite;
+}
+ @keyframes blockdis {
+     30% {
+         opacity: 1;
+    }
+     40%, 100% {
+         opacity: 0;
+         transform: translate3d(-160px, 93px, 0);
+    }
+}
+ @keyframes firstBlock {
+     0%, 15% {
+         opacity: 0;
+    }
+     40%, 100% {
+         opacity: 1;
+    }
+}
+ #redblocksparticles g:nth-child(1) polygon {
+     opacity: 0.35;
+     animation: glow 4s 1s ease infinite;
+}
+ #redblocksparticles g:nth-child(2) polygon {
+     opacity: 0.35;
+     animation: glow 4s 1s ease infinite;
+}
+ #redblocksparticles g:nth-child(3) polygon {
+     opacity: 0.35;
+     animation: glow 4s 1s ease infinite;
+}
+ #redblocksparticles g:nth-child(4) polygon {
+     opacity: 0.35;
+     animation: glow 4s 1s ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(1) {
+     animation: dots 4s 1050ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(1) {
+     animation: dots 4s 1050ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(1) {
+     animation: dots 4s 1050ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(1) {
+     animation: dots 4s 1050ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(2) {
+     animation: dots 4s 1100ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(2) {
+     animation: dots 4s 1100ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(2) {
+     animation: dots 4s 1100ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(2) {
+     animation: dots 4s 1100ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(3) {
+     animation: dots 4s 1150ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(3) {
+     animation: dots 4s 1150ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(3) {
+     animation: dots 4s 1150ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(3) {
+     animation: dots 4s 1150ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(4) {
+     animation: dots 4s 1200ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(4) {
+     animation: dots 4s 1200ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(4) {
+     animation: dots 4s 1200ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(4) {
+     animation: dots 4s 1200ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(5) {
+     animation: dots 4s 1250ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(5) {
+     animation: dots 4s 1250ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(5) {
+     animation: dots 4s 1250ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(5) {
+     animation: dots 4s 1250ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(6) {
+     animation: dots 4s 1300ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(6) {
+     animation: dots 4s 1300ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(6) {
+     animation: dots 4s 1300ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(6) {
+     animation: dots 4s 1300ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(7) {
+     animation: dots 4s 1350ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(7) {
+     animation: dots 4s 1350ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(7) {
+     animation: dots 4s 1350ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(7) {
+     animation: dots 4s 1350ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(8) {
+     animation: dots 4s 1400ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(8) {
+     animation: dots 4s 1400ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(8) {
+     animation: dots 4s 1400ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(8) {
+     animation: dots 4s 1400ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(9) {
+     animation: dots 4s 1450ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(9) {
+     animation: dots 4s 1450ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(9) {
+     animation: dots 4s 1450ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(9) {
+     animation: dots 4s 1450ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(10) {
+     animation: dots 4s 1500ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(10) {
+     animation: dots 4s 1500ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(10) {
+     animation: dots 4s 1500ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(10) {
+     animation: dots 4s 1500ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(11) {
+     animation: dots 4s 1550ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(11) {
+     animation: dots 4s 1550ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(11) {
+     animation: dots 4s 1550ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(11) {
+     animation: dots 4s 1550ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(12) {
+     animation: dots 4s 1600ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(12) {
+     animation: dots 4s 1600ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(12) {
+     animation: dots 4s 1600ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(12) {
+     animation: dots 4s 1600ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(13) {
+     animation: dots 4s 1650ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(13) {
+     animation: dots 4s 1650ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(13) {
+     animation: dots 4s 1650ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(13) {
+     animation: dots 4s 1650ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(14) {
+     animation: dots 4s 1700ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(14) {
+     animation: dots 4s 1700ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(14) {
+     animation: dots 4s 1700ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(14) {
+     animation: dots 4s 1700ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(15) {
+     animation: dots 4s 1750ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(15) {
+     animation: dots 4s 1750ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(15) {
+     animation: dots 4s 1750ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(15) {
+     animation: dots 4s 1750ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(16) {
+     animation: dots 4s 1800ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(16) {
+     animation: dots 4s 1800ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(16) {
+     animation: dots 4s 1800ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(16) {
+     animation: dots 4s 1800ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(17) {
+     animation: dots 4s 1850ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(17) {
+     animation: dots 4s 1850ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(17) {
+     animation: dots 4s 1850ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(17) {
+     animation: dots 4s 1850ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(18) {
+     animation: dots 4s 1900ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(18) {
+     animation: dots 4s 1900ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(18) {
+     animation: dots 4s 1900ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(18) {
+     animation: dots 4s 1900ms ease infinite;
+}
+ #redblocksparticles g:nth-child(1) g circle:nth-child(19) {
+     animation: dots 4s 1950ms ease infinite;
+}
+ #redblocksparticles g:nth-child(2) g circle:nth-child(19) {
+     animation: dots 4s 1950ms ease infinite;
+}
+ #redblocksparticles g:nth-child(3) g circle:nth-child(19) {
+     animation: dots 4s 1950ms ease infinite;
+}
+ #redblocksparticles g:nth-child(4) g circle:nth-child(19) {
+     animation: dots 4s 1950ms ease infinite;
+}
+ @keyframes glow {
+     0%, 45% {
+         opacity: 0;
+    }
+     60%, 100% {
+         opacity: 0.35;
+    }
+}
+ @keyframes dots {
+     0%, 35% {
+         transform: translate(0);
+         opacity: 0;
+    }
+     60%, 80% {
+         transform: translate(55px, -35px);
+         opacity: 1;
+    }
+     100% {
+         transform: translate(55px, -35px);
+         opacity: 0;
+    }
+}
+ #purplebg > :nth-child(1) {
+     animation: up 2s 500ms ease infinite alternate;
+}
+ #purplebg > :nth-child(2) {
+     animation: up 2s 1000ms ease infinite alternate;
+}
+ #purplebg > :nth-child(3) {
+     animation: up 2s 1500ms ease infinite alternate;
+}
+ #purplebg > :nth-child(4) {
+     animation: up 2s 2000ms ease infinite alternate;
+}
+ #purplebg > :nth-child(5) {
+     animation: up 2s 2500ms ease infinite alternate;
+}
+ #purplebg > :nth-child(6) {
+     animation: up 2s 3000ms ease infinite alternate;
+}
+ #purplebg > :nth-child(7) {
+     animation: up 2s 3500ms ease infinite alternate;
+}
+ #purplebg > :nth-child(8) {
+     animation: up 2s 4000ms ease infinite alternate;
+}
+ #purplebg > :nth-child(9) {
+     animation: up 2s 4500ms ease infinite alternate;
+}
+ #purplebg > :nth-child(10) {
+     animation: up 2s 5000ms ease infinite alternate;
+}
+ #purplebg > :nth-child(11) {
+     animation: up 2s 5500ms ease infinite alternate;
+}
+ #purplebg > :nth-child(12) {
+     animation: up 2s 6000ms ease infinite alternate;
+}
+ #purplebg > :nth-child(13) {
+     animation: up 2s 6500ms ease infinite alternate;
+}
+ #purplebg > :nth-child(14) {
+     animation: up 2s 7000ms ease infinite alternate;
+}
+ #purplebg > :nth-child(15) {
+     animation: up 2s 7500ms ease infinite alternate;
+}
+ #purplebg > :nth-child(16) {
+     animation: up 2s 8000ms ease infinite alternate;
+}
+ #purplebg > :nth-child(17) {
+     animation: up 2s 8500ms ease infinite alternate;
+}
+ #purplebg > :nth-child(18) {
+     animation: up 2s 9000ms ease infinite alternate;
+}
+ #purplebg > :nth-child(19) {
+     animation: up 2s 9500ms ease infinite alternate;
+}
+ #purplebg > :nth-child(20) {
+     animation: up 2s 10000ms ease infinite alternate;
+}
+ #purplebg > :nth-child(21) {
+     animation: up 2s 10500ms ease infinite alternate;
+}
+ @keyframes up {
+     to {
+         transform: translate(0, -25px);
+    }
+}
+ #bottomparticles > :nth-child(1) {
+     animation: particles 4s 300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(1) {
+     animation: particles 4s 300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(1) {
+     animation: particles 4s 300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles > :nth-child(2) {
+     animation: particles 4s 600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(2) {
+     animation: particles 4s 600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(2) {
+     animation: particles 4s 600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles > :nth-child(3) {
+     animation: particles 4s 900ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(3) {
+     animation: particles 4s 900ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(3) {
+     animation: particles 4s 900ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles > :nth-child(4) {
+     animation: particles 4s 1200ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(4) {
+     animation: particles 4s 1200ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(4) {
+     animation: particles 4s 1200ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles > :nth-child(5) {
+     animation: particles 4s 1500ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(5) {
+     animation: particles 4s 1500ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(5) {
+     animation: particles 4s 1500ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles > :nth-child(6) {
+     animation: particles 4s 1800ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(6) {
+     animation: particles 4s 1800ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(6) {
+     animation: particles 4s 1800ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles > :nth-child(7) {
+     animation: particles 4s 2100ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(7) {
+     animation: particles 4s 2100ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(7) {
+     animation: particles 4s 2100ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles > :nth-child(8) {
+     animation: particles 4s 2400ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(8) {
+     animation: particles 4s 2400ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(8) {
+     animation: particles 4s 2400ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles > :nth-child(9) {
+     animation: particles 4s 2700ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(9) {
+     animation: particles 4s 2700ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(9) {
+     animation: particles 4s 2700ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles > :nth-child(10) {
+     animation: particles 4s 3000ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(10) {
+     animation: particles 4s 3000ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(10) {
+     animation: particles 4s 3000ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles > :nth-child(11) {
+     animation: particles 4s 3300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(11) {
+     animation: particles 4s 3300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(11) {
+     animation: particles 4s 3300ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles > :nth-child(12) {
+     animation: particles 4s 3600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #bottomparticles2 > :nth-child(12) {
+     animation: particles 4s 3600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ #redglowparticles > :nth-child(12) {
+     animation: particles 4s 3600ms ease infinite alternate, p 2s ease infinite alternate;
+}
+ @keyframes p {
+     85%, 100% {
+         opacity: 0;
+    }
+}
+ @keyframes particles {
+     0%, 100% {
+         transform: translate(0);
+    }
+     50% {
+         transform: translate(10px, 15px);
+    }
+}
+ .particlespoly {
+     animation: p 2s ease infinite alternate;
+}
+ #d-app g:nth-child(1) {
+     animation: updown 2s 200ms ease-in-out infinite alternate;
+}
+ #d-app g:nth-child(2) {
+     animation: updown 2s 400ms ease-in-out infinite alternate;
+}
+ #d-app g:nth-child(3) {
+     animation: updown 2s 600ms ease-in-out infinite alternate;
+}
+ #d-apps2 g:nth-child(1) {
+     animation: updown 2s 200ms ease-in-out infinite alternate;
+}
+ #d-apps2 g:nth-child(2) {
+     animation: updown 2s 400ms ease-in-out infinite alternate;
+}
+ #d-apps2 g:nth-child(3) {
+     animation: updown 2s 600ms ease-in-out infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(1) {
+     animation: updown 2s 50ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(2) {
+     animation: updown 2s 100ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(3) {
+     animation: updown 2s 150ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(4) {
+     animation: updown 2s 200ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(5) {
+     animation: updown 2s 250ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(6) {
+     animation: updown 2s 300ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(7) {
+     animation: updown 2s 350ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(8) {
+     animation: updown 2s 400ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(9) {
+     animation: updown 2s 450ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(10) {
+     animation: updown 2s 500ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(11) {
+     animation: updown 2s 550ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(12) {
+     animation: updown 2s 600ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(13) {
+     animation: updown 2s 650ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(14) {
+     animation: updown 2s 700ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(15) {
+     animation: updown 2s 750ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(16) {
+     animation: updown 2s 800ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(17) {
+     animation: updown 2s 850ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(18) {
+     animation: updown 2s 900ms ease infinite alternate;
+}
+ #d-apps2wrapper g:nth-child(3) g > circle:nth-child(19) {
+     animation: updown 2s 950ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(1) {
+     animation: updown 2s 50ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(2) {
+     animation: updown 2s 100ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(3) {
+     animation: updown 2s 150ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(4) {
+     animation: updown 2s 200ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(5) {
+     animation: updown 2s 250ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(6) {
+     animation: updown 2s 300ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(7) {
+     animation: updown 2s 350ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(8) {
+     animation: updown 2s 400ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(9) {
+     animation: updown 2s 450ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(10) {
+     animation: updown 2s 500ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(11) {
+     animation: updown 2s 550ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(12) {
+     animation: updown 2s 600ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(13) {
+     animation: updown 2s 650ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(14) {
+     animation: updown 2s 700ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(15) {
+     animation: updown 2s 750ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(16) {
+     animation: updown 2s 800ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(17) {
+     animation: updown 2s 850ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(18) {
+     animation: updown 2s 900ms ease infinite alternate;
+}
+ #d-appswrapper g:nth-child(2) g > circle:nth-child(19) {
+     animation: updown 2s 950ms ease infinite alternate;
+}
+ @keyframes updown {
+     100% {
+         transform: translate(0, -20px);
+    }
+}
+ #Layer_1 > g:nth-child(2) > g:nth-child(18) > g:nth-child(12) {
+     animation: arrows 1s ease-in-out infinite alternate, p 2s ease infinite alternate;
+}
+ @keyframes arrows {
+     to {
+         transform: translate(25px, 25px);
+    }
+}
+ #Layer_1 > g:nth-child(2) > g:nth-child(17) > g:nth-child(13) {
+     animation: arrows2 1s ease-in-out infinite alternate, p 2s ease infinite alternate;
+}
+ @keyframes arrows2 {
+     to {
+         transform: translate(-25px, -25px);
+    }
+}
+ #Layer_1 > g:nth-child(2) > g:nth-child(17) > g:nth-child(12) {
+     animation: arrows 1s ease-in-out infinite alternate, p 2s ease infinite alternate;
+}
+ 
+
+.wallet {
+    margin-left: 40%;
+     border-radius: 20px;
+  background-color:#a099ff;
+  height: 320px;
+  width: 600px;
+  background-image: 
+    radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%), 
+    radial-gradient(at 67% 20%, hsla(357,94%,71%,1) 0, transparent 59%), 
+    radial-gradient(at 88% 35%, hsla(222,81%,65%,1) 0, transparent 50%), 
+    radial-gradient(at 31% 91%, hsla(9,61%,61%,1) 0, transparent 52%), 
+    radial-gradient(at 27% 71%, hsla(336,91%,65%,1) 0, transparent 49%), 
+    radial-gradient(at 74% 89%, hsla(30,98%,65%,1) 0, transparent 51%), 
+    radial-gradient(at 53% 75%, hsla(174,94%,68%,1) 0, transparent 45%);
+
+ 
+  padding: 1vh;
+  border-radius: 1vh;
+  animation: wallet 4s infinite;
+}
+
+.mwallet {
+    
+  border-radius: 20px;
+  background-color:#a099ff;
+  height: 250px;
+  width: 300px;
+  background-image: 
+    radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%), 
+    radial-gradient(at 67% 20%, hsla(357,94%,71%,1) 0, transparent 59%), 
+    radial-gradient(at 88% 35%, hsla(222,81%,65%,1) 0, transparent 50%), 
+    radial-gradient(at 31% 91%, hsla(9,61%,61%,1) 0, transparent 52%), 
+    radial-gradient(at 27% 71%, hsla(336,91%,65%,1) 0, transparent 49%), 
+    radial-gradient(at 74% 89%, hsla(30,98%,65%,1) 0, transparent 51%), 
+    radial-gradient(at 53% 75%, hsla(174,94%,68%,1) 0, transparent 45%);
+
+ 
+  padding: 1vh;
+  border-radius: 1vh;
+  animation: mwallet 4s infinite;
+}
+
+
+@keyframes wallet {
+  from, to {
+    box-shadow: 0 1vh 0 1vh hsl(0deg 0% 75%), 0 2vh 0 2vh hsl(0deg 0% 50%), 0 3vh 0 3vh hsl(0deg 0% 25%), 0 4vh 0 4vh hsl(0deg 0% 0%);
+  }
+  50% {
+    box-shadow: 0 -1vh 0 1vh hsl(0deg 0% 75%), 0 -2vh 0 2vh hsl(0deg 0% 50%), 0 -3vh 0 3vh hsl(0deg 0% 25%), 0 -4vh 0 4vh hsl(0deg 0% 0%);
+  }
+}
+
+@keyframes mwallet {
+  from, to {
+    box-shadow: 0 1vh 0 1vh hsl(0deg 0% 75%), 0 2vh 0 2vh hsl(0deg 0% 50%), 0 3vh 0 3vh hsl(0deg 0% 25%), 0 4vh 0 4vh hsl(0deg 0% 0%);
+  }
+  50% {
+    box-shadow: 0 -1vh 0 1vh hsl(0deg 0% 75%), 0 -2vh 0 2vh hsl(0deg 0% 50%), 0 -3vh 0 3vh hsl(0deg 0% 25%), 0 -4vh 0 4vh hsl(0deg 0% 0%);
+  }
+}
+
+
+.containerwallet{
+     overflow: hidden;
+    background-color:#0f0e13;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
+    margin: 0 5vw transparent;
+    padding-bottom: 50px;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+/* ------x------- Global Classes -------x-------*/
+
+/* --------------- navbar ----------------- */
+.gradient-bg-services {
+  background-color:#0f0e13;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.nav{
+    
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{    
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+    font-size: 1.6rem;
+}
+
+.nav .social{
+    padding: 1.4rem 0
+}
+
+.nav .social i{
+    padding: 0 .2rem;
+}
+
+.nav .social i:hover{
+    color: #a1c4cf;
+}
+
+/* -------x------- navbar ---------x------- */
+
+
+/* ----------------- Main Content----------- */
+
+/* --------------- Site title ---------------- */
+.balance
+{
+  font-size: 80px;
+  color: white;
+}
+ .site-title{
+     
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+.site-cs{
+     
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+ .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.site-cs .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+ .site-title .site-cs h1, h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+left: 0;
+    right: 0;
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+.containerwallet > .btn{
+    margin-left: 50px;
+    margin: 1.8rem;
+    background: var(--sky);
+}
+.containerwallet > .btn:hover{
+     background: goldenrod;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+ .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/* --------x------ Site title --------x------- */
+
+/* --------------- Blog Carousel ------------ */
+
+ .blog{
+
+    background: url('../assets/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+ .blog .blog-post{
+    padding-top: 6rem;
+}
+
+ .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+ .blog-content .blog-title{
+    padding: 2rem 0;
+}
+
+ .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
+}
+
+ .blog-content span{
+    display: block;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: var(--text-gray);
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: var(--midnight);
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+}
+
+
+/* -------x------- Blog Carousel -----x------ */
+
+/* ---------------- Site Content ----------------*/
+
+ .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+ .post-content{
+    width: 100%;
+    
+}
+
+ .site-content .post-content > .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+ .site-content .post-content > .post-image .post-info{
+    background: var(--sky);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 3rem;
+}
+
+ .site-content .post-content > .post-image > div{
+    overflow: hidden;
+}
+
+ .site-content .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+ .site-content .post-content > .post-image .img:hover{
+    transform: scale(1.3);
+}
+
+ .site-content .post-content > .post-image .post-info span{
+    margin: 0 .5rem;
+}
+
+ .post-content .post-title a{
+    font-family: var(--Anton);
+    font-size: 1.5rem;
+}
+
+.site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background: var(--sky);
+}
+
+.site-content .pagination{
+    justify-content: center;
+    color: var(--text-gray);
+    margin: 4rem 0;
+}
+
+.site-content .pagination a{
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+    font-family: var(--Lexend);
+}
+
+.site-content .pagination .pages{
+    background: var(--text-gray);
+    color: var(--white);
+}
+
+/* -------x-------- Site Content --------x-------*/
+
+
+/* --------------- Sidebar ----------------------- */
+
+.site-content > .sidebar .category-list{
+    font-family: var(--Livvic);   
+}
+
+.site-content > .sidebar .category-list .list-items{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-content > .sidebar .category-list .list-items a{
+    color:  black;
+}
+
+.site-content .sidebar .popular-post .post-content{
+    padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2{
+    padding-top: 8rem;
+}
+
+.site-content .sidebar .popular-post .post-info{
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: white !important;
+}
+
+.site-content .sidebar .popular-post .post-title a{
+    font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter{
+    padding-top: 10rem;
+}
+
+.site-content .sidebar .newsletter .form-element{
+    padding: .5rem 2rem;
+}
+
+.site-content .sidebar .newsletter .input-element{
+    width: 80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+    font-family: var(--Lexend);
+    font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter .form-btn{
+    border-radius: 0;
+    padding: .8rem 32%;
+    margin: 1rem 0;
+    background: var(--sky);
+}
+
+.site-content .sidebar .popular-tags{
+    padding: 5rem 0;
+}
+
+.site-content .sidebar .popular-tags .tags .tag{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin: .4rem .6rem;
+}
+
+
+/* -------x------- Sidebar -----------x----------- */
+
+/* ---------x------- Main Content -----x----- */
+
+
+/* ----------------- Footer --------------------- */
+
+footer.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: var(--white);
+}
+
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+footer.footer .follow div i{
+    color: var(--white);
+    padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+
+footer.footer .rights h4 a{
+    color: var(--white);
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+ #content{
+        display:flex;
+    }
+/* ---------x------- Footer ----------x---------- */
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+}
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+ #content{
+        display: block;
+        margin: auto;
+
+    }
+    .wallet{
+        height: 300px;
+        width: 300px;
+        margin: auto;
+
+    }
+
+    
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+     .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+/*        x      Viewport less then or equal to 750px       x     */
+
+
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px){
+     .blog{
+        height: 125vh;
+    }
+
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+
+    footer.footer .container > div{
+        padding:  1rem .9rem !important;
+    }
+#content{
+        display: block;
+    }
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    nav .toggle-collapse{
+        width: 80% !important;
+    }
+
+}
+
+/*        x      Viewport less then or equal to 520px       x     */
